@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="index.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></link>
+	<link rel="stylesheet" href="index.css"/>
+	<title>The most evil day</title>
+</head>
+<body>
+	<div class="container">
+		<p class="headlines text-center">Yo!</p>
+		<p class="news text-center col-sm-offset-2 col-sm-8">Today is one of the most special days of the year. You know why it is so?</p>
+		<p><button class="btn btn-large col-sm-2 col-sm-offset-4 yes" id="yes_btn">YES</button><button class="btn btn-large col-sm-2 no" id="no_btn">NO</button></p>
+	</div>
+	<div class="container" id="no_answer" style="display: none">
+		<div class="text_container">
+			<p class="headlines text-center bright-orange">So you dont know!!</p>
+			<p class="detailed_news text-center col-sm-offset-2 col-sm-8">Today is one of the days of the evil, the day when: 
+				<div class="col-sm-5 col-sm-offset-4">
+					<ul>
+						<li>
+							<a href="http://en.wikipedia.org/wiki/Execution_of_Saddam_Hussein" target="_blank" class="no_a">Saddam Hussein was hanged</a>
+						</li>
+						<li>
+							<a href="http://en.wikipedia.org/wiki/2001_Indian_Parliament_attack" target="_blank" class="no_a">Indian Parliament was attacked</a>
+						</li>
+					</ul>
+				</div>
+			</p>
+			<p><button class="btn btn-large col-sm-offset-4 col-sm-4 yes" id="read_more_btn1">Read More</button></p>
+		</div>
+	</div>
+	<div class="container" id="yes_answer" style="display: none">
+		<div class="text_container">
+			<p class="headlines text-center bright-orange">So you know!!</p>
+			<p class="yes_detailed_news text-center col-sm-offset-2 col-sm-8">Today is the day when: 
+				<div class="col-sm-5 col-sm-offset-4">
+					<ul>
+						<li>
+							<a href="http://en.wikipedia.org/wiki/Execution_of_Saddam_Hussein" target="_blank" class="yes_a">Saddam Hussein was hanged</a>
+						</li>
+						<li>
+							<a href="http://en.wikipedia.org/wiki/2001_Indian_Parliament_attack" target="_blank" class="yes_a">Indian Parliament was attacked</a>
+						</li>
+					</ul>
+				</div>
+			</p>
+			<p><button class="btn btn-large col-sm-4 col-sm-offset-4 yes" id="read_more_btn2">Read More</button></p>
+		</div>
+	</div>
+	<div class="container" id="read_more" style="display: none">
+		<div class="text_container">
+			<p class="headlines text-center bright-orange">And its BDay Time !!!</p>
+			<p class="news text-center col-sm-offset-2 col-sm-8">Today is the bday of the two most beautiful women in my life.</p>
+			<p class="news text-center col-sm-offset-2 col-sm-8" style="font-size: 250%">Happy Bday didi</p>
+			<p><button class="btn btn-large col-sm-4 col-sm-offset-4 yes" id="view_story_btn">View our story</button></p>
+		</div>
+	</div>
+	<div class="container" id="view_story" style="display: none;background-color: #5c97b5;">
+		<div id="myCarousel" class="carousel slide" style="padding-top: 10vh;height: 100vh;">  
+			<!-- Carousel items -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<table class="table_center col-sm-8 col-sm-offset-2">
+						<tr>
+							<td>
+								<img src="1.jpg" alt="First slide" style="height: 75vh;" >
+							</td>
+							<td class="text-center">
+								<div class="caption">13th December 1990: When two beautiful girls took birth. They were devils inside angels body :P.</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<table class="table_center col-sm-8 col-sm-offset-2">
+						<tr>
+							<td>
+								<img src="2.jpg" alt="First slide" style="height: 75vh;" >
+							</td>
+							<td class="text-center">
+								<div class="caption">Trupti Di...You remember how you used to run behind me to make me eat and always made me sleep after singing the lullaby "Mera chanda hai tu, mera suraj hai tu...".</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<table class="table_center col-sm-8 col-sm-offset-2">
+						<tr>
+							<td>
+								<img src="3.jpg" alt="First slide" style="height: 75vh;" >
+							</td>
+							<td class="text-center">
+								<div class="caption">Remember the school days, mom made me wear your shirts as they had become smaller for you and were my size. I always had to use your toys, your things :'(.</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<table class="table_center col-sm-8 col-sm-offset-2">
+						<tr>
+							<td>
+								<img src="4.jpg" alt="First slide" style="height: 75vh;" >
+							</td>
+							<td class="text-center">
+								<div class="caption">Remember the floods when I was drowning, water came till my neck but you held my hands and we made it outside together. I was jumping, running all the way but you never left my hands.</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<table class="table_center col-sm-8 col-sm-offset-2">
+						<tr>
+							<td>
+								<img src="5.jpg" alt="First slide" style="height: 75vh;" >
+							</td>
+							<td class="text-center">
+								<div class="caption">We attended all your dance performances. But no one came when I wrote plays, everytime some or other problem came up. I was too jealous of you both.</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<table class="table_center col-sm-8 col-sm-offset-2">
+						<tr>
+							<td>
+								<img src="6.jpg" alt="First slide" style="height: 75vh;" >
+							</td>
+							<td class="text-center">
+								<div class="caption">But you both were too lovely for me. There were times when my anger crossed limits and one of you usually got slapped, but you never slapped me back.</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<table class="table_center col-sm-8 col-sm-offset-2">
+						<tr>
+							<td>
+								<img src="7.jpg" alt="First slide" style="height: 75vh;" >
+							</td>
+							<td class="text-center">
+								<div class="caption">Mom always took my side, and you complained but you never left me when I needed help. Girlfriends left but you remain as solid as ever.</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<table class="table_center col-sm-10 col-sm-offset-1">
+						<tr>
+							<td>
+								<img src="8.jpg" alt="First slide" style="height: 70vh;" >
+							</td>
+							<td class="text-center">
+								<div class="caption">You always shielded me from all the problems and tried to handle everything on your own. You always showed me paths you couldnt take. You started earning at so early stage so that I could study and pursue my dreams.</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<table class="table_center col-sm-8 col-sm-offset-2">
+						<tr>
+							<td>
+								<img src="9.jpg" alt="First slide" style="height: 75vh;" >
+							</td>
+							<td class="text-center">
+								<div class="caption">You are my bestest buddies. Ones whom I call after I get the worst of the dream, my advisory council, ones I know are always there for me. I may not be the best bro but I will try to better every day. Thank You for being the light whenever the darkness came.</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!-- Carousel nav -->
+			<a class="carousel-control left" href="#myCarousel" 
+			data-slide="prev">&lsaquo;</a>
+			<a class="carousel-control right" href="#myCarousel" 
+			data-slide="next">&rsaquo;</a>
+			<!-- Controls buttons -->
+			<div style="text-align:center;">
+				<input type="button" class="btn start-slide btn-default controls" value="Start">
+				<input type="button" class="btn pause-slide btn-default controls" value="Pause">
+				<input type="button" class="btn prev-slide btn-default controls" value="Previous">
+				<input type="button" class="btn next-slide btn-default controls" value="Next">
+			</div>
+		</div> 
+		<script>
+			$(function(){
+      // Initializes the carousel
+      $(".start-slide").click(function(){
+      	$("#myCarousel").carousel('cycle');
+      });
+      // Stops the carousel
+      $(".pause-slide").click(function(){
+      	$("#myCarousel").carousel('pause');
+      });
+      // Cycles to the previous item
+      $(".prev-slide").click(function(){
+      	$("#myCarousel").carousel('prev');
+      });
+      // Cycles to the next item
+      $(".next-slide").click(function(){
+      	$("#myCarousel").carousel('next');
+      });
+    });
+		</script> 
+	</div>
+</body>
+</html>

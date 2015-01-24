@@ -1,0 +1,36 @@
+$(document).ready(function(){
+	$('#no_btn').click(function(){
+		$('.container').effect('explode',{'pieces': 20},1000,function(){
+			$('#no_answer').show();
+			$('#read_more_btn1').click(function(){
+				$('#no_answer').effect('puff',1000,function(){
+					$('#read_more').show();
+						$('#view_story_btn').click(function(){
+						$('#read_more').effect('fold',1000,function(){
+							$('#read_more').remove();
+							$('#view_story').show();
+							$('.carousel').carousel();
+						});
+					});
+				});
+			});
+		});
+	});
+	$('#yes_btn').click(function(){
+		$('.container').effect('explode',{'pieces': 20},1000,function(){
+			$('#yes_answer').show();
+			$('#read_more_btn2').click(function(){
+				$('#yes_answer').effect('puff',1000,function(){
+					$('#read_more').show();
+					$('#view_story_btn').click(function(){
+						$('#read_more').effect('fold',1000,function(){
+							$('#read_more').remove();
+							$('#view_story').show();
+							$('.carousel').carousel();
+						});
+					});
+				});
+			});
+		});
+	});
+});
